@@ -1,0 +1,183 @@
+button.button21 {
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: rgb(0,0,0);
+    outline: none;
+    border: 1px solid rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 2px;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-shadow:
+            0 0 3px rgba(0,0,0,0) inset,
+            0 1px 1px 1px rgba(255,255,255,.2),
+            0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+}
+a.button21:hover:not(:active) {
+    box-shadow:
+            0 0 3px rgba(0,0,0,0) inset,
+            0 1px 1px 1px rgba(0,255,255,.5),
+            0 -1px 1px 1px rgba(0,255,255,.5);
+}
+a.button21:active {
+    background: linear-gradient(rgb(250,250,250), rgb(235,235,235));
+    box-shadow:
+            0 0 3px rgba(0,0,0,.5) inset,
+            0 1px 1px 1px rgba(255,255,255,.4),
+            0 -1px 1px 1px rgba(0,0,0,.1);
+}
+
+.navbarmirro {
+    background-color: #F4F5F6; border-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbarmirro:before{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+
+.navbarmirro:after{
+    display: table;
+    content: " ";
+    box-sizing: border-box;}
+
+.addressmirrored {
+    font: bold 16px/22px gothicb,arial;
+    color: #e83841;
+    /*text-transform: uppercase;*/
+    vertical-align: baseline;}
+
+
+.addressmirrogray {
+    font: bold 16px/22px gothicb,arial;
+    color: #333333;
+    /*text-transform: uppercase;*/
+    vertical-align: baseline;}
+
+
+.mastermirro {
+    text-transform: uppercase;
+    font-weight: bold;}
+
+.col-md-3{padding-bottom: 20px;}
+
+h2{margin-left: 20px;}
+
+/*::-webkit-scrollbar {width: 0px;}/*������ ������*/
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;height: auto !important; height: 100%;margin: 0 auto -60px;}
+
+#push,#footer {height: 60px;}
+
+h1 {margin-top: 20px; margin-bottom: 20px;}
+
+.detail:before {
+    content: url("inprocess.png");
+    display: inline-block;
+    margin-left:-.25em;
+    margin-top:1em;
+    position:absolute;
+}
+
+/*#mirrowork:before {*/
+/*    content: url("inprocess.png");*/
+/*    display: inline-block;*/
+/*    margin-left: -.25em;*/
+/*    margin-top: 1em;*/
+/*    position: absolute;*/
+/*}*/
+
+.finishedd2:before {
+    content: url("finished.png");
+    display: inline-block;
+    margin-left: -.25em;
+    margin-top: 1em;
+    position: absolute;
+}
+
+.add2 {
+    padding-left: 20px;
+    font: bold 16px/22px gothicb,arial;
+    vertical-align: middle;
+}
+
+details[open] div {
+    animation: spoiler 1s;
+}
+@keyframes spoiler {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.column {
+    -webkit-columns: 100px 5;
+    -moz-columns: 100px 5;
+    columns: 100px 5;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
+
+.mdl-cell{
+    box-sizing:border-box;
+    background-color: #f9f9f9;
+    /*width: calc(70% - 16px);*/
+    /*margin: 8px;*/
+    padding: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    display: block;
+}
+
+/*.mdl-grid{*/
+/*    padding: 8px;*/
+/*    display: flex;*/
+/*    flex-flow: row wrap;*/
+/*    margin: 0 auto;*/
+/*    align-items: stretch;*/
+/*}*/
+
+.mdl-typography--title{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: .02em;
+    margin: 0 0 16px;
+}
+
+summary{
+    color: #337ab7;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+summary:hover {
+    text-decoration: underline;
+    /*color:#ff3200;  !* изменение цвета метки при наведении *!*/
+    cursor: pointer;  /* курсор на метке имеет вид руки */
+
+}
+
+code {
+    background-color: #f9f9f9;
+    font-size: 100%;
+    padding: 0;
+
+}
