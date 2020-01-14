@@ -280,4 +280,7 @@ def bd_counting(call):
                     bot.send_photo(call.message.chat.id, photo=open(os.path.join(path2date, master, image), 'rb'), caption=line2, parse_mode='Markdown')
 
 
-bot.polling()
+try: bot.polling()
+except Exception as e:
+    message = e.args
+    log(message)
